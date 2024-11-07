@@ -1,0 +1,13 @@
+@media (max-width:590px) {
+    .container{
+        max-width:80vw;
+        padding: 15px 10px;
+    }
+    
+    .form-group{
+        max-width: 100%;;
+    }
+    input{
+        width: 90%;
+    }
+}

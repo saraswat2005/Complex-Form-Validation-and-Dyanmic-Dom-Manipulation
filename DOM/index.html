@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="outer">
+    <div class="container">
+        <h1>User Registration</h1>
+        <form id="registrationForm" >
+
+<div class="name">
+
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+                <small class="error-message" id="firstNameError"></small>
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" required>
+                <small class="error-message" id="surnameError"></small>
+            </div>
+
+        </div>
+        
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+            <small class="error-message" id="ageError"></small>
+        </div>
+        
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <small class="error-message" id="emailError"></small>
+            </div>
+
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <small class="error-message" id="passwordError"></small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="successMessage" class="hidden"></div>
+    </div>
+</div>
+
+</div>
+<div class="c1"></div>
+<div class="c2"></div>
+</div>
+
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
